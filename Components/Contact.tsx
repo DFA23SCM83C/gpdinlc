@@ -3,10 +3,12 @@ import image from '../public/img1.jpg'
 import { Card } from 'flowbite-react';
 export default function HorizontalCard() {
     return (
+
         <Card
 
             horizontal
             imgSrc={image.src}
+
         >
             <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
 
@@ -66,5 +68,6 @@ export default function HorizontalCard() {
             </Card>
 
         </Card>
+
     )
 }
