@@ -7,7 +7,7 @@ export default function HorizontalCard() {
         <Card
 
             horizontal
-            imgSrc={image.src}
+            // imgSrc={image.src}
 
         >
             <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">

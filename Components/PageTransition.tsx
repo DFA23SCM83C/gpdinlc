@@ -19,7 +19,7 @@ function PageTransition({ children, ...rest }: PageTransitionProps, ref: PageTra
             <div className="col-12">
                 <NavBar/>
             </div>
-            <div className="col-12 " align="center">
+            <div className="col-12 " >
                 <motion.div
                     ref={ref}
                     initial={onTheRight}

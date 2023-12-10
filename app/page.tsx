@@ -1,5 +1,5 @@
 "use client"
-import PageLayout from "@/Components/PageLayout";
+
 import React from "react";
 import PageTransition from "@/Components/PageTransition";
 

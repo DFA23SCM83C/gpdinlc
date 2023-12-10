@@ -3,6 +3,7 @@ import {useState} from "react"
 import "./layout.css"
 
 
+// @ts-ignore
 export default function Layout ({title , description }){
 
     const [isOpen, setIsOpen] = useState(false)

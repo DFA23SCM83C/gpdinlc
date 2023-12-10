@@ -1,6 +1,6 @@
 import React, {useEffect, useRef, useState} from "react";
 import {motion} from "framer-motion";
-import image from "@/app/image";
+import {images} from "@/app/image";
 import '../app/carousel.css';
 
 export default function Slider (){
@@ -10,6 +10,7 @@ export default function Slider (){
     useEffect(()=>{
         // Check if carousel.current is defined
         if (carousel.current) {
+            // @ts-ignore
             setwidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
         }
 
@@ -20,8 +21,8 @@ export default function Slider (){
                 <motion.div className="carousel" whileTap={{cursor:"grabbing"}}>
                     <motion.div drag="x" dragConstraints={{right:0 ,left: -2000}}  className="inner-carousel"
                     >
-                        {image.map((image, index) => {
-                            const imageUrl = image.src;
+                        {images.map((image, index) => {
+                            const imageUrl = image;
                             return (
                                 <motion.div key={index} className="item">
                                     <img src={imageUrl} alt=''/>
