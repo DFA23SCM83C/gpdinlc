@@ -10,7 +10,7 @@ export default function Page (props: IndexPageProps, ref: IndexPageRef){
         <PageTransition ref={ref}>
 
             <div className="body center">
-            <div className="example-container">
+            <div className="example-container" style={{paddingLeft:'5px'}}>
            <Example></Example>
             </div>
             </div>
