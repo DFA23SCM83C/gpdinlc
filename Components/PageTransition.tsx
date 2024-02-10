@@ -43,15 +43,7 @@ function PageTransition({ children, ...rest }: PageTransitionProps, ref: PageTra
             year={2023}
         />
         <Footer.LinkGroup>
-            <Footer.Link href="/about">
-                About
-            </Footer.Link>
-            <Footer.Link href="/event">
-                Events
-            </Footer.Link>
-            <Footer.Link href="/contact">
-                Contact
-            </Footer.Link>
+           
 
         </Footer.LinkGroup>
         </Footer>

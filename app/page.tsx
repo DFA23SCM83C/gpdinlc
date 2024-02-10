@@ -1,5 +1,6 @@
 "use client"
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import React from "react";
 import PageTransition from "@/Components/PageTransition";
 import '../Components/layout.css'
@@ -14,7 +15,7 @@ export default function Home (props: IndexPageProps, ref: IndexPageRef){
 
     return (
         <PageTransition >
-
+  <ToastContainer />
           <Jumbotron></Jumbotron>
         </PageTransition>
 

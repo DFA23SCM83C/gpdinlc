@@ -11,13 +11,13 @@ export default function Layout ({title , description }){
         <>
 
 <div className="p-1">
-    <motion.div className="card shadow-2xl" onClick={() => setIsOpen(!isOpen)}>
+    <motion.div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700" onClick={() => setIsOpen(!isOpen)}>
         <motion.h2 layout="position" className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
             {title}
         </motion.h2>
         {isOpen && (
             <motion.div>
-                <p className="text-sm font-normal text-gray-700 dark:text-gray-400">{description}</p>
+                <div className="text-sm font-normal text-gray-700 dark:text-gray-400">{description}</div>
             </motion.div>
         )}
     </motion.div>
